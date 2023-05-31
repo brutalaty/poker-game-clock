@@ -1,0 +1,82 @@
+$font-path: "/fonts/";
+
+@font-face {
+  font-family: Vezla;
+  src: url($font-path + "Vezla.ttf");
+}
+@font-face {
+  font-family: Good Timing;
+  src: url($font-path + "good_timing.ttf");
+}
+@font-face {
+  font-family: Gravtrac;
+  src: url($font-path + "gravtrac.ttf");
+}
+@font-face {
+  font-family: Pattaya;
+  src: url($font-path + "Pattaya_Regular.ttf");
+}
+@font-face {
+  font-family: Play;
+  src: url($font-path + "Play_Regular.ttf");
+}
+@font-face {
+  font-family: Straight Ruler;
+  src: url($font-path + "Straight_Ruler.ttf");
+}
+
+$heading-font: "Pattaya", sans-serif;
+$label-font: "Good Timing", sans-serif;
+$timer-font: "Straight Ruler", sans-serif;
+$chip-font: "Play", sans-serif;
+$blind-font: "Play", sans-serif;
+$button-font: "Play", sans-serif;
+
+$base-font-family: "Good Timing";
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$white: rgb(220, 220, 220);
+$dark: #343a40;
+
+$color-primary: #a00000;
+$color-primary-light: #8f4ef1;
+$color-primary-dark: #6223c0;
+
+$color-secondary: #1075c7;
+$color-secondary-light: #1a87e0;
+$color-secondary-dark: #0f65ac;
+
+// Body
+$color-bg-primary: #000000;
+$color-bg-secondary: #050000;
+$color-bg-tertiary: #150000;
+
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  color: $white;
+  background: linear-gradient(
+    150deg,
+    $color-bg-primary,
+    $color-bg-secondary,
+    $color-bg-tertiary
+  );
+  min-height: 100vh;
+  margin: 0;
+  font-family: $base-font-family;
+}
+
+#app {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
